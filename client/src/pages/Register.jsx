@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault();
         try {
             // Backend'e kayıt isteği atıyoruz (POST request)
-            await axios.post('http://localhost:5000/api/auth/register', {
+            await axios.post('https://todoapp-server-ossaggelen.onrender.com/api/auth/register', {
                 username,
                 password,
                 role: 'user' // Varsayılan olarak normal kullanıcı yapıyoruz

@@ -82,7 +82,7 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-// Bu adres aslında: POST http://localhost:5000/api/todos
+// Bu adres aslında: POST https://todoapp-server-ossaggelen.onrender.com/api/todos
 router.post('/', auth, async (req, res) => {
     try {
         // 1. Önce modeli oluşturuyoruz

@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     const fetchLogs = useCallback(async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/admin/logs', {
+            const res = await axios.get('https://todoapp-server-ossaggelen.onrender.com/api/admin/logs', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setLogs(res.data);
@@ -44,7 +44,7 @@ const AdminDashboard = () => {
 
         try {
             const token = localStorage.getItem('token');
-            await axios.delete('http://localhost:5000/api/admin/logs', {
+            await axios.delete('https://todoapp-server-ossaggelen.onrender.com/api/admin/logs', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             

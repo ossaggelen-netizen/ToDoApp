@@ -17,7 +17,7 @@ const Home = () => {
     const fetchTodos = useCallback(async () => {
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/todos', {
+            const res = await axios.get('https://todoapp-server-ossaggelen.onrender.com/api/todos', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (Array.isArray(res.data)) {
@@ -40,7 +40,7 @@ const Home = () => {
         e.preventDefault();
         try {
             const token = localStorage.getItem('token');
-            await axios.post('http://localhost:5000/api/todos', 
+            await axios.post('https://todoapp-server-ossaggelen.onrender.com/api/todos', 
                 { title }, 
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -55,7 +55,7 @@ const Home = () => {
     const deleteTodo = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:5000/api/todos/${id}`, {
+            await axios.delete(`https://todoapp-server-ossaggelen.onrender.com/api/todos/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             fetchTodos();
@@ -68,7 +68,7 @@ const Home = () => {
     const toggleTodo = async (id, completed) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.patch(`http://localhost:5000/api/todos/${id}`, 
+            await axios.patch(`https://todoapp-server-ossaggelen.onrender.com/api/todos/${id}`, 
                 { completed: !completed }, 
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -94,7 +94,7 @@ const Home = () => {
     const saveEdit = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.patch(`http://localhost:5000/api/todos/${id}`, 
+            await axios.patch(`https://todoapp-server-ossaggelen.onrender.com/api/todos/${id}`, 
                 { title: editText }, 
                 { headers: { Authorization: `Bearer ${token}` } }
             );

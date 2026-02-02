@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (username, password) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', { username, password });
+            const res = await axios.post('https://todoapp-server-ossaggelen.onrender.com/api/auth/login', { username, password });
             setUser(res.data.user);
             localStorage.setItem('token', res.data.token); // Biletini cebine koy (Save token)
             localStorage.setItem('user', JSON.stringify(res.data.user)); // Kimliğini kaydet
