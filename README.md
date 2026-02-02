@@ -36,7 +36,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için adımları takip edin:
 
 1.  **Repoyu İndirin:**
     ```bash
-    git clone [https://github.com/KULLANICI_ADIN/ToDoApp.git](https://github.com/KULLANICI_ADIN/ToDoApp.git)
+    git clone [https://github.com/ossaggelen-netizen/ToDoApp.git](https://github.com/ossaggelen-netizen/ToDoApp.git)
     cd ToDoApp
     ```
 
