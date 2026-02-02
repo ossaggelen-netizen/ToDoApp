@@ -5,6 +5,10 @@ ToDoApp, kullanıcıların günlük görevlerini planlamasını, takip etmesini 
 Kullanıcı dostu arayüzü, canlı düzenleme (inline editing) özellikleri ve gelişmiş Admin loglama sistemi ile güvenli bir deneyim sunar.
 
 
+> **🌐 Canlı Demo:** [https://todoapp-client-ossaggelen.onrender.com](https://todoapp-client-ossaggelen.onrender.com)
+> *(Not: Sunucu ücretsiz planda olduğu için ilk açılışta 50 saniye beklemeniz gerekebilir.)*
+
+
 ## Özellikler
 
 **Kullanıcı Sistemi:** JWT tabanlı güvenli Kayıt Ol (Register) ve Giriş Yap (Login) işlemleri.
