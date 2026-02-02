@@ -36,8 +36,8 @@ Projeyi kendi bilgisayarınızda çalıştırmak için adımları takip edin:
 
 1.  **Repoyu İndirin:**
     ```bash
-    git clone [https://github.com/KULLANICI_ADIN/taskflow-app.git](https://github.com/KULLANICI_ADIN/taskflow-app.git)
-    cd taskflow-app
+    git clone [https://github.com/KULLANICI_ADIN/ToDoApp.git](https://github.com/KULLANICI_ADIN/ToDoApp.git)
+    cd ToDoApp
     ```
 
 2.  **Bağımlılıkları Yükleyin:**
