@@ -1,0 +1,18 @@
+# Gereksiz Klasörler
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Şifre Dosyaları (Çok Önemli)
+.env
+client/.env
+server/.env
+
+# Build dosyaları
+dist/
+build/
+
+# Gereksiz Sistem Dosyaları
+.DS_Store
+logs/
+*.log
